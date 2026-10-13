@@ -74,6 +74,7 @@ export default function CardItem({ card, index, onOpen, onFavorite, onDelete }) 
   return (
     <Animated.View
       style={{
+        height: 88,
         opacity: appear,
         transform: [
           {
@@ -163,7 +164,7 @@ export default function CardItem({ card, index, onOpen, onFavorite, onDelete }) 
 
 function makeStyles(colors) {
   return StyleSheet.create({
-    swipeContainer: { marginBottom: 10, borderRadius: 8, overflow: 'hidden' },
+    swipeContainer: { marginBottom: 8, borderRadius: 8, overflow: 'hidden' },
     panel: {
       ...StyleSheet.absoluteFillObject,
       justifyContent: 'center',
